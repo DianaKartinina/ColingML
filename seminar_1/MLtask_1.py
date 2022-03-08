@@ -14,7 +14,7 @@ with open ('sen.txt', 'r') as sent:
     
     for i in range(number_sentences):  # пытаюсь выполнить пункт 5 из задания..Здесь все посыпалось.
         for j in range(len(dict_words)):
-            matrix[i][j] = number_sentences[i].count(dictionary_sent[j])
+            matrix[i][j] = number_sentences[i].count(dict_words[j])
     print(matrix)
     
     cos_matrix = []
